@@ -1,0 +1,18 @@
+.header {
+  height: 70px;
+  padding: 0 40px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.header__box {
+  display: flex;
+  align-items: center;
+}
+
+.header__logotext {
+  font-size: 32px;
+  font-weight: 800;
+  color: #000;
+}

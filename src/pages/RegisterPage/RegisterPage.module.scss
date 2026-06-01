@@ -1,0 +1,62 @@
+// .registerpage {
+//   &__box {
+//     padding: 110px 120px;
+//     display: flex;
+//     justify-content: space-between;
+//   }
+
+//   &__titlewrap {
+//     padding-left: 120px;
+
+//   }
+
+//   &__title {
+//     color: #000000;
+//     font-family: Roboto;
+//     font-size: 102px;
+//     font-weight: 900;
+//   }
+
+//   &__subtitle {
+//     color: #52555f;
+//     font-family: Roboto;
+//     font-size: 16px;
+//     font-weight: 700;
+//   }
+// }
+
+.registerpage {
+  min-height: calc(100vh - 70px);
+  background-color: #F5F6FB;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerpage__box {
+  width: 1200px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+.registerpage__titlewrap {
+  flex: 1;
+}
+
+.registerpage__title {
+  font-size: 110px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.registerpage__subtitle {
+  font-size: 24px;
+  letter-spacing: 6px;
+  color: #52555f;
+  text-transform: uppercase;
+}
