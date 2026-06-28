@@ -1,0 +1,121 @@
+.reportsbalance {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.reportsbalance__container {
+  width: 100%;
+  max-width: 1030px;
+  height: 85px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(170, 178, 197, 0.15);
+}
+
+.reportsbalance__item {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.reportsbalance__divider {
+  width: 2px;
+  height: 45px;
+  background-color: #f5f6fb;
+}
+
+.reportsbalance__title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #52555f;
+}
+
+.reportsbalance__cost {
+  font-size: 22px;
+  font-weight: 700;
+  color: #e53935;
+}
+
+.reportsbalance__income {
+  font-size: 22px;
+  font-weight: 700;
+  color: #407946;
+}
+
+@media (max-width: 1200px) {
+  .reportsbalance__container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .reportsbalance {
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+
+  .reportsbalance__container {
+    height: auto;
+    padding: 20px 0;
+    flex-direction: column;
+    border-radius: 20px;
+    max-width: 95%;
+  }
+
+  .reportsbalance__divider {
+    width: 80%;
+    height: 1px;
+    margin: 20px 0;
+  }
+
+  .reportsbalance__item {
+    width: 100%;
+    gap: 14px;
+  }
+
+  .reportsbalance__title {
+    font-size: 14px;
+  }
+
+  .reportsbalance__cost,
+  .reportsbalance__income {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reportsbalance {
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+
+  .reportsbalance__container {
+    padding: 16px 0;
+    border-radius: 16px;
+    max-width: 100%;
+  }
+
+  .reportsbalance__item {
+    gap: 10px;
+  }
+
+  .reportsbalance__title {
+    font-size: 12px;
+  }
+
+  .reportsbalance__cost,
+  .reportsbalance__income {
+    font-size: 16px;
+  }
+
+  .reportsbalance__divider {
+    width: 70%;
+    margin: 14px 0;
+  }
+}

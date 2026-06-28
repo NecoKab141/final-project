@@ -1,42 +1,14 @@
-// .registerpage {
-//   &__box {
-//     padding: 110px 120px;
-//     display: flex;
-//     justify-content: space-between;
-//   }
-
-//   &__titlewrap {
-//     padding-left: 120px;
-
-//   }
-
-//   &__title {
-//     color: #000000;
-//     font-family: Roboto;
-//     font-size: 102px;
-//     font-weight: 900;
-//   }
-
-//   &__subtitle {
-//     color: #52555f;
-//     font-family: Roboto;
-//     font-size: 16px;
-//     font-weight: 700;
-//   }
-// }
-
 .registerpage {
   min-height: calc(100vh - 70px);
   background-color: #F5F6FB;
-
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .registerpage__box {
   width: 1200px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,14 +21,99 @@
 
 .registerpage__title {
   font-size: 110px;
-  font-weight: 700;
+  font-weight: 900;
   color: #000;
   margin-bottom: 10px;
 }
 
 .registerpage__subtitle {
-  font-size: 24px;
+  margin-left: 70px;
+  font-weight: 700;
+  font-size: 16px;
   letter-spacing: 6px;
   color: #52555f;
   text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+  .registerpage__box {
+    width: 100%;
+    gap: 60px;
+    padding: 0 40px;
+  }
+
+  .registerpage__title {
+    font-size: 80px;
+  }
+
+  .registerpage__subtitle {
+    margin-left: 50px;
+    font-size: 14px;
+    letter-spacing: 4px;
+  }
+}
+
+@media (max-width: 992px) {
+  .registerpage__box {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .registerpage__titlewrap {
+    width: 100%;
+  }
+
+  .registerpage__title {
+    font-size: 64px;
+  }
+
+  .registerpage__subtitle {
+    margin-left: 0;
+    font-size: 14px;
+    letter-spacing: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .registerpage {
+    min-height: calc(100vh - 60px);
+    padding: 16px;
+  }
+
+  .registerpage__box {
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .registerpage__title {
+    font-size: 48px;
+  }
+
+  .registerpage__subtitle {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .registerpage {
+    min-height: calc(100vh - 56px);
+    padding: 12px;
+  }
+
+  .registerpage__box {
+    gap: 24px;
+    padding: 0 12px;
+  }
+
+  .registerpage__title {
+    font-size: 36px;
+    margin-bottom: 6px;
+  }
+
+  .registerpage__subtitle {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
 }

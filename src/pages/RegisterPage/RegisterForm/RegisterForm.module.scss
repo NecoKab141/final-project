@@ -1,7 +1,6 @@
 .form {
   width: 436px;
   padding: 50px 85px;
-
   background-color: #fff;
   border-radius: 30px;
 }
@@ -9,7 +8,7 @@
 .form__text {
   margin-bottom: 20px;
   color: #52555F;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -17,8 +16,9 @@
 .form__google {
   width: 122px;
   height: 40px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
+  margin-left: 80px;
   margin-bottom: 30px;
   border-radius: 26px;
   background: #F6F7FB;
@@ -36,37 +36,28 @@
 .form__input {
   width: 100%;
   height: 56px;
-
   padding: 0 20px;
   margin-bottom: 20px;
-
-  border: 1px solid #e5e7eb;
-  border-radius: 16px;
-
+  border: none;
+  background-color: #F6F7FB;
+  border-radius: 30px;
   outline: none;
-
-  &:focus {
-    border-color: #FF751D;
-  }
 }
 
 .form__buttons {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 20px;
-
   margin-top: 15px;
 }
 
 .form__login {
   padding: 16px 40px;
-
   border: none;
   border-radius: 16px;
-
   background-color: #FF751D;
   color: white;
-
   font-weight: 600;
   cursor: pointer;
 }
@@ -74,7 +65,112 @@
 .form__register {
   border: none;
   background: transparent;
-
   color: #64748b;
   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .form {
+    width: 380px;
+    padding: 40px 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .form {
+    width: 100%;
+    max-width: 436px;
+    padding: 40px 50px;
+  }
+
+  .form__google {
+    margin-left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .form {
+    padding: 32px 30px;
+    border-radius: 24px;
+  }
+
+  .form__text {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .form__google {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
+
+  .form__input {
+    height: 48px;
+    font-size: 12px;
+    padding: 0 16px;
+    margin-bottom: 16px;
+  }
+
+  .form__label {
+    font-size: 11px;
+    margin-bottom: 6px;
+  }
+
+  .form__buttons {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .form__login {
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .form__register {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    padding: 24px 20px;
+    border-radius: 20px;
+  }
+
+  .form__text {
+    font-size: 10px;
+  }
+
+  .form__google {
+    height: 36px;
+    font-size: 12px;
+  }
+
+  .form__input {
+    height: 42px;
+    font-size: 11px;
+    padding: 0 14px;
+    margin-bottom: 14px;
+    border-radius: 24px;
+  }
+
+  .form__label {
+    font-size: 10px;
+  }
+
+  .form__login {
+    padding: 12px;
+    font-size: 13px;
+    border-radius: 14px;
+  }
+
+  .form__register {
+    font-size: 12px;
+  }
 }

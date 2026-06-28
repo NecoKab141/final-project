@@ -4,6 +4,8 @@
   background-color: #fff;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .header__box {
@@ -14,5 +16,93 @@
 .header__logotext {
   font-size: 32px;
   font-weight: 800;
+  font-family: "Roboto";
   color: #000;
+}
+
+.header__user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header__useremail {
+  font-size: 14px;
+  font-weight: 500;
+  color: #52555F;
+}
+
+.header__divider {
+  width: 1px;
+  height: 30px;
+  background-color: #e0e0e0;
+}
+
+.header__logout {
+  border: none;
+  background-color: white;
+  color: #52555F;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: 250ms;
+}
+
+.header__logout:hover {
+  background-color: #f5f6fb;
+  color: #ff751d;
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 60px;
+    padding: 0 20px;
+  }
+
+  .header__logotext {
+    font-size: 24px;
+  }
+
+  .header__useremail {
+    font-size: 12px;
+  }
+
+  .header__divider {
+    height: 24px;
+  }
+
+  .header__logout {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 56px;
+    padding: 0 16px;
+  }
+
+  .header__logotext {
+    font-size: 20px;
+  }
+
+  .header__user {
+    gap: 10px;
+  }
+
+  .header__useremail {
+    font-size: 11px;
+  }
+
+  .header__divider {
+    height: 20px;
+  }
+
+  .header__logout {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
 }

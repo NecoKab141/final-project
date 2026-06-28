@@ -1,0 +1,213 @@
+.mainpage {
+  background-color: #F2F5FC;
+  padding-top: 40px;
+  min-height: 100vh;
+}
+
+.mainpage__balancebox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mainpage__balancetext {
+  font-size: 12px;
+  font-weight: 500;
+  color: #52555FB2;
+}
+
+.mainpage__input {
+  border: 2px solid #fff;
+  border-radius: 16px;
+  padding: 12px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #000;
+  outline: none;
+  background: #fff;
+}
+
+.mainpage__btn {
+  background-color: #F2F5FC;
+  padding: 12px 20px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #52555FB2;
+  border: 2px solid #FFFFFF;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.mainpage__btntocalculations {
+  position: absolute;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  font-size: 12px;
+  font-weight: 400;
+  color: #52555FB2;
+  cursor: pointer;
+}
+
+.mainpage__navigate {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 120px;
+}
+
+.mainpage__btncosts,
+.mainpage__btnincome {
+  border: none;
+  padding: 16px 40px;
+  background-color: #fafbfd;
+  font-size: 12px;
+  font-weight: 700;
+  color: #52555F;
+  cursor: pointer;
+  transition: 250ms;
+}
+
+.mainpage__btncosts {
+  border-radius: 20px 20px 0 0;
+}
+
+.mainpage__btnincome {
+  border-radius: 20px 20px 0 0;
+}
+
+.mainpage__btnactive {
+  background-color: #ffffff;
+  color: #FF751D;
+}
+
+.mainpage__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 0 30px 30px 30px;
+  padding: 30px;
+  min-height: 650px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+  .mainpage__container {
+    max-width: 95%;
+  }
+
+  .mainpage__navigate {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainpage {
+    padding-top: 24px;
+  }
+
+  .mainpage__balancebox {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 16px;
+  }
+
+  .mainpage__balancetext {
+    font-size: 11px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .mainpage__input {
+    width: 160px;
+    padding: 10px 16px;
+    font-size: 11px;
+  }
+
+  .mainpage__btn {
+    padding: 10px 16px;
+    font-size: 11px;
+  }
+
+  .mainpage__btntocalculations {
+    position: static;
+    font-size: 11px;
+    width: 100%;
+    text-align: center;
+    margin-top: 4px;
+  }
+
+  .mainpage__navigate {
+    margin-left: 0;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .mainpage__btncosts,
+  .mainpage__btnincome {
+    padding: 12px 24px;
+    font-size: 11px;
+  }
+
+  .mainpage__container {
+    border-radius: 0 20px 20px 20px;
+    padding: 20px;
+    min-height: 500px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainpage {
+    padding-top: 16px;
+  }
+
+  .mainpage__balancebox {
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 12px;
+  }
+
+  .mainpage__balancetext {
+    font-size: 10px;
+  }
+
+  .mainpage__input {
+    width: 100%;
+    padding: 8px 14px;
+    font-size: 10px;
+  }
+
+  .mainpage__btn {
+    width: 100%;
+    padding: 8px 14px;
+    font-size: 10px;
+  }
+
+  .mainpage__btntocalculations {
+    font-size: 10px;
+  }
+
+  .mainpage__navigate {
+    margin-top: 20px;
+    gap: 4px;
+  }
+
+  .mainpage__btncosts,
+  .mainpage__btnincome {
+    padding: 10px 16px;
+    font-size: 10px;
+    flex: 1;
+    text-align: center;
+  }
+
+  .mainpage__container {
+    border-radius: 0 16px 16px 16px;
+    padding: 16px;
+    min-height: 400px;
+  }
+}

@@ -1,23 +1,23 @@
-.incomepage {
+.costpage {
   width: 100%;
 }
 
-.incomepage__container {
+.costpage__container {
   width: 100%;
 }
 
-.incomepage__formbox {
+.costpage__formbox {
   margin-bottom: 40px;
 }
 
-.incomepage__form {
+.costpage__form {
   display: flex;
   align-items: center;
   gap: 0;
   width: 100%;
 }
 
-.incomepage__date {
+.costpage__date {
   font-size: 12px;
   font-weight: 700;
   color: #52555f;
@@ -25,8 +25,8 @@
   white-space: nowrap;
 }
 
-.incomepage__input,
-.incomepage__select {
+.costpage__input,
+.costpage__select {
   height: 44px;
   border: 2px solid #f5f6fb;
   background-color: #ffffff;
@@ -36,13 +36,13 @@
   flex: 1;
 }
 
-.incomepage__input:first-of-type {
+.costpage__input:first-of-type {
   border-radius: 16px 0 0 16px;
   border-right: none;
   flex: 3;
 }
 
-.incomepage__select {
+.costpage__select {
   border-left: none;
   border-right: none;
   flex: 2;
@@ -53,25 +53,25 @@
   cursor: pointer;
 }
 
-.incomepage__input:last-of-type {
+.costpage__input:last-of-type {
   border-radius: 0 16px 16px 0;
   border-left: none;
   flex: 1;
 }
 
-.incomepage__input:focus,
-.incomepage__select:focus {
+.costpage__input:focus,
+.costpage__select:focus {
   border-color: #ff751d;
   z-index: 1;
 }
 
-.incomepage__buttons {
+.costpage__buttons {
   display: flex;
   gap: 12px;
   margin-left: 20px;
 }
 
-.incomepage__submit {
+.costpage__submit {
   padding: 12px 25px;
   border: none;
   border-radius: 16px;
@@ -83,7 +83,7 @@
   white-space: nowrap;
 }
 
-.incomepage__clear {
+.costpage__clear {
   padding: 12px 25px;
   border: none;
   border-radius: 16px;
@@ -95,12 +95,12 @@
   white-space: nowrap;
 }
 
-.incomepage__content {
+.costpage__content {
   display: flex;
   gap: 30px;
 }
 
-.incomepage__transactions {
+.costpage__transactions {
   flex: 1;
   background-color: #fff;
   border-radius: 20px;
@@ -110,7 +110,7 @@
   flex-direction: column;
 }
 
-.incomepage__head {
+.costpage__head {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 1fr 120px;
   padding: 20px;
@@ -118,7 +118,7 @@
   font-weight: 700;
 }
 
-.incomepage__list {
+.costpage__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -126,20 +126,20 @@
   flex: 1;
 }
 
-.incomepage__list::-webkit-scrollbar {
+.costpage__list::-webkit-scrollbar {
   width: 8px;
 }
 
-.incomepage__list::-webkit-scrollbar-track {
+.costpage__list::-webkit-scrollbar-track {
   background-color: #f5f6fb;
 }
 
-.incomepage__list::-webkit-scrollbar-thumb {
+.costpage__list::-webkit-scrollbar-thumb {
   background-color: #ff751d;
   border-radius: 20px;
 }
 
-.incomepage__transaction {
+.costpage__transaction {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 1fr 120px;
   align-items: center;
@@ -147,11 +147,11 @@
   border-bottom: 1px solid #f0f0f0;
 }
 
-.incomepage__transaction:last-child {
+.costpage__transaction:last-child {
   border-bottom: none;
 }
 
-.incomepage__delete {
+.costpage__delete {
   border: none;
   background: transparent;
   cursor: pointer;
@@ -159,91 +159,91 @@
   font-weight: 700;
 }
 
-.incomepage__summary {
+.costpage__summary {
   width: 300px;
   background-color: #f5f6fb;
   border-radius: 20px;
   padding: 25px;
 }
 
-.incomepage__summarytitle {
+.costpage__summarytitle {
   margin-bottom: 20px;
   text-align: center;
   font-size: 16px;
 }
 
-.incomepage__summarylist {
+.costpage__summarylist {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.incomepage__summaryitem {
+.costpage__summaryitem {
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
 }
 
 @media (max-width: 992px) {
-  .incomepage__form {
+  .costpage__form {
     flex-wrap: wrap;
     gap: 12px;
   }
 
-  .incomepage__date {
+  .costpage__date {
     width: 100%;
     margin-right: 0;
   }
 
-  .incomepage__input:first-of-type {
+  .costpage__input:first-of-type {
     border-radius: 16px;
     border-right: 2px solid #f5f6fb;
     flex: 1 1 100%;
   }
 
-  .incomepage__select {
+  .costpage__select {
     border-left: 2px solid #f5f6fb;
     border-radius: 16px;
     flex: 1 1 100%;
   }
 
-  .incomepage__input:last-of-type {
+  .costpage__input:last-of-type {
     border-radius: 16px;
     border-left: 2px solid #f5f6fb;
     flex: 1 1 100%;
   }
 
-  .incomepage__buttons {
+  .costpage__buttons {
     width: 100%;
     margin-left: 0;
   }
 
-  .incomepage__submit,
-  .incomepage__clear {
+  .costpage__submit,
+  .costpage__clear {
     flex: 1;
   }
 }
 
 @media (max-width: 768px) {
-  .incomepage__content {
+  .costpage__content {
     flex-direction: column;
   }
 
-  .incomepage__summary {
+  .costpage__summary {
     width: 100%;
   }
 
-  .incomepage__transactions {
+  .costpage__transactions {
     height: 400px;
   }
 
-  .incomepage__head {
+  .costpage__head {
     grid-template-columns: 1fr 2fr 2fr 1fr 60px;
     padding: 14px 12px;
     font-size: 11px;
   }
 
-  .incomepage__transaction {
+  .costpage__transaction {
     grid-template-columns: 1fr 2fr 2fr 1fr 60px;
     padding: 14px 12px;
     font-size: 11px;
@@ -251,53 +251,53 @@
 }
 
 @media (max-width: 480px) {
-  .incomepage__formbox {
+  .costpage__formbox {
     margin-bottom: 20px;
   }
 
-  .incomepage__input,
-  .incomepage__select {
+  .costpage__input,
+  .costpage__select {
     height: 38px;
     font-size: 10px;
     padding: 0 12px;
   }
 
-  .incomepage__submit,
-  .incomepage__clear {
+  .costpage__submit,
+  .costpage__clear {
     padding: 10px;
     font-size: 10px;
   }
 
-  .incomepage__transactions {
+  .costpage__transactions {
     height: 300px;
   }
 
-  .incomepage__head {
+  .costpage__head {
     grid-template-columns: 0.8fr 1.5fr 1.5fr 0.8fr 40px;
     padding: 10px 8px;
     font-size: 9px;
   }
 
-  .incomepage__transaction {
+  .costpage__transaction {
     grid-template-columns: 0.8fr 1.5fr 1.5fr 0.8fr 40px;
     padding: 10px 8px;
     font-size: 9px;
   }
 
-  .incomepage__summary {
+  .costpage__summary {
     padding: 16px;
   }
 
-  .incomepage__summarytitle {
+  .costpage__summarytitle {
     font-size: 14px;
   }
 
-  .incomepage__summaryitem {
+  .costpage__summaryitem {
     font-size: 11px;
     padding: 8px 0;
   }
 
-  .incomepage__delete {
+  .costpage__delete {
     font-size: 12px;
   }
 }
